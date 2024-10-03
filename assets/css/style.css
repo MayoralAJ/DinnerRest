@@ -10,7 +10,7 @@ body{
     font-family: 'Inter';
     font-size: 18px;
     background-color: #141414;
-    color: #ffffff;
+    color:#ffffff;
 }
 .container{
     width: 100%;
@@ -23,6 +23,7 @@ body{
     padding-bottom: 45px;
     gap: 50px;
 }
+/*HEADER*/
 header nav{
     flex: 1;
     display: flex;
@@ -40,9 +41,9 @@ header nav li a{
     text-decoration: none;
 }
 header nav li a:hover{
-    color: #999999;
+    color:#999999;
 }
-header nav  .button{
+header nav .button{
     display: block;
     border: 1px solid #ffffff;
     padding: 15px 30px;
@@ -72,6 +73,7 @@ header .menu-icon div{
     background-color: #ffffff;
     border-radius: 6px;
 }
+/*Seção HERO*/
 .hero .container{
     display: flex;
 }
@@ -101,11 +103,11 @@ header .menu-icon div{
     margin: 40px 0;
 }
 .hero .button{
-    display: inline-block;
+    display:inline-block;
     background-color: #30ee8f;
     font-weight: 800;
     font-size: 28px;
-    color: #ffffff;
+    color:#ffffff;
     padding: 15px 80px;
     border-radius: 5px;
     text-decoration: none;
@@ -113,6 +115,7 @@ header .menu-icon div{
 .hero .button:hover{
     opacity: 0.8;
 }
+/*Seção Search ou Busca*/
 .search{
     background-color: #1f1f1f;
     padding: 80px 0;
@@ -130,11 +133,11 @@ header .menu-icon div{
 .search .sides{
     display: flex;
     margin-top: 30px;
-    gap: 100px;
+    gap:100px;
 }
 .search .leftside, .search .rightside{
     flex: 1;
-}    
+}
 .search input,
 .search select{
     width: 100%;
@@ -145,20 +148,22 @@ header .menu-icon div{
     padding: 20px;
     border: 0;
     border-radius: 5px;
-}          
+}
 .search input{
-    background-color: url('./assets/img/searchIcon.png');
+    background-image: url('./assets/img/searchIcon.png');
     background-repeat: no-repeat;
     background-position: 20px center;
     padding-left: 60px;
 }
 .search select{
     border-right: 20px solid transparent;
-}  
+}
 .sides{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
+
+/*PRODUTOS*/
 .products-grid{
     width: 100%;
     display: grid;
@@ -174,12 +179,13 @@ header .menu-icon div{
     position: relative;
 }
 .product-item:hover{
-    opacity: 0.8;
+    opacity:0.8;
 }
 .product-item .s{
     position: absolute;
     top: 30px;
-    left: 30px;background-color: #30ee8f;
+    left:30px;
+    background-color: #30ee8f;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
@@ -198,7 +204,7 @@ header .menu-icon div{
 .product-item .info{
     background-color: #1f1f1f;
     padding: 60px 30px 30px 30px;
-    margin-top: -50%;
+    margin-top: -50px;
 }
 .product-item .product-category{
     color: #ffffff;
@@ -216,15 +222,16 @@ header .menu-icon div{
     font-size: 32px;
     font-weight: bold;
 }
-
-
+/*Para telas ate largura de 820px*/
 @media(max-width:820px){
+    /*HEADER*/
     header nav{
         display: none;
     }
     header .menu{
         display: flex;
     }
+    /*Seção HERO*/
     .hero .container{
         flex-direction: column;
     }
@@ -242,11 +249,15 @@ header .menu-icon div{
         font-size: 44px;
         line-height: 50px;
     }
+    /*Seção Search ou Busca*/
     .search{
         padding-bottom: 30px;
     }
+    .search .title{
+        text-align: center;
+    }
     .search .sides{
         flex-direction: column;
-        gap: 20px;
+        gap:20px;
     }
 }
