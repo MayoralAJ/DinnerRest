@@ -312,4 +312,28 @@ footer .copyrights a:hover{
         flex-direction: column;
         gap:20px;
     }
+    .products-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 40px 0;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media(max-width:500px){
+    .products-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: 40px 0;
+    }
+    main .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
